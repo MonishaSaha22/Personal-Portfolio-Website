@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            font-family: "Poppins", sans-serif;
+            color: white;
+            background-color: rgb(7, 7, 41);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(2, 2, 70);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            font-size: 1.02rem;
+            color: rgb(162, 162, 243);
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1px;
+            margin: 20px 80px;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            /* margin: 65px 0; */
+            font-size: 2rem;
+        }
+
+        .rightsection img {
+            width: 80%;
+            border-radius: 80%;
+
+            box-shadow: 0 0 30px rgb(82, 82, 224);
+        }
+
+        .rightsection img:hover {
+            width: 80%;
+            border-radius: 80%;
+            box-shadow: 0 0 30px rgb(35, 13, 235), 0 0 40px rgb(35, 13, 235), 0 0 70px rgb(35, 13, 235);
+        }
+
+        .purple {
+            color: rgb(174, 110, 235);
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+        #element {
+            color: rgb(174, 110, 235);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.5rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 83vw;
+            height: 2px;
+            margin: 49px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 90px;
+            background-color: white;
+            width: 1px;
+            margin: 0 100px;
+        }
+
+        .img-top {
+            width: 31px;
+            position: relative;
+            top: -36px;
+            left: -16px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 70px;
+            width: 172px;
+            left: -3px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 88px;
+            width: 182px;
+            left: -3px;
+            color: gray;
+            font-size: 13px;
+        }
+
+        footer {
+            /* margin: 200px 40px; */
+            margin-top: 200px;
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color: rgb(2, 4, 27);
+            height: 100px;
+            justify-content: space-around;
+        }
+
+        .footer {
+            display: flex;
+            padding: 20px 20px;
+            justify-content: space-around;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: rgb(71, 85, 94);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Monisha's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Monisha</span>
+                <div>I am a passionate</div>
+                <span id="element"></span>
+                <!-- <div>Web Developer & Competitive Coder</div> -->
+            </div>
+            <div class="rightsection">
+                <img src="profile.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Experiences</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="hackto.jpeg" alt="" class="img-top">
+                    <div class="vertical-title">
+                        HacktoberFest (2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Contributed in HacktoberFest Open-Source by making 4 contributions. I used various data
+                        structures like arrays, stacks, queues and linkedlists to make the contributions. I worked with
+                        Java and C++ in this open-source.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="java.png" alt="" class="img-top">
+                    <div class="vertical-title">
+                        Java Developer Intern (2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Worked as a Java Developer Intern at Oasis Infobyte for one month. I make various projects such
+                        as ATM management system, Library Management System and Number Guessing Games.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="internshala.png" alt="" class="img-top">
+                    <div class="vertical-title">
+                        Internshala Student Partner (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Been an internshala student partner and campus ambassador for Haldia Institute of Technology.
+                        Made awarness about internshala in the campus.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="internzlearn.jpeg" alt="" class="img-top">
+                    <div class="vertical-title">
+                        Corporate Representative Intern (2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Been a Corporate Representative Intern at Internz Learn and had an oppurtunity to showcase my
+                        team management and leadership and sales skills.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="pwc.png" alt="" class="img-top">
+                    <div class="vertical-title">
+                        PwC Launchpad'24 Winner (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Awarded as a 'Consistent Crusador' at PwC Launchpad 2024 in the Cloud and Digital Team. Ranked
+                        top 1 in all of India and College. Received amazing goodies. The courses included - IT
+                        fundamentals, RDBMS, Java Programming, DevOps and CLoud and Responsive Web Design.
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+        <div class="footer">
+            <h3>Monisha's Coding Profiles</h3>
+            <div class="first-foot">
+
+                <a href="https://leetcode.com/u/monishasaha/" target="_blank">Leetcode</a>
+            </div>
+            <div class="second-foot">
+
+                <a href="https://www.geeksforgeeks.org/user/monishasaha222003/" target="_blank">GeeksforGeeks</a>
+            </div>
+            <div class="third-foot">
+
+                <a href="https://www.codechef.com/users/monishaaa" target="_blank">Codechef</a>
+            </div>
+            <div class="fourth-foot">
+
+                <a href="https://www.linkedin.com/in/monishasaha22/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; www.monishasportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Competitive Programmer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
